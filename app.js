@@ -5,6 +5,7 @@ const hbs = require('hbs');
 
 const app = express();
 app.use(logger('dev'));
+
 app.use(express.json());
 
 // views engine setup
@@ -17,3 +18,4 @@ app.get('/', function(req, res) {
 });
 
 app.listen(3000);
+
