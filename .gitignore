@@ -1,3 +1,7 @@
+node_modules
+/.idea
+
+
 # Logs
 logs
 *.log
@@ -81,6 +85,13 @@ typings/
 # Nuxt.js build / generate output
 .nuxt
 dist
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # Gatsby files
 .cache/
