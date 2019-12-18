@@ -4,6 +4,9 @@ const path = require('path');
 const hbs = require('hbs');
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(logger('dev'));
 
 app.use(express.json());
