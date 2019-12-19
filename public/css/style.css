@@ -60,6 +60,10 @@
     margin: 0 20px 10px 0;
     font-size: 17px;
 }
+.pie:hover{
+    color: rgb(57, 174, 157);
+    transition: 0.3s;
+}
 
 .cake{
     font-family: 'Pattaya', sans-serif;
@@ -67,11 +71,14 @@
     margin: 0 0 10px 20px;
     font-size: 17px;
 }
+.cake:hover{
+    color: rgb(57, 174, 157);
+    transition: 0.3s;
+}
 
 a{
     text-decoration: none;
 }
-
 
 /* Main */
 
@@ -86,8 +93,8 @@ a{
 /* INDEX.HBS */
 
 .product{
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 330px;
     background-color: rgba(64,224,208,0.4);
     border-radius: 8px;
     margin: 15px;
@@ -103,22 +110,42 @@ a{
 
 }
 
+.form{
+    margin-top: 15px;
+}
+
 .form_span{
-    font-family: 'Pattaya', sans-serif;
-    font-size: 15px;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 13px;
     margin-left: 20px;
-    color: rgb(57, 174, 157);
+    color: rgb(41, 118, 103);
 }
 
 .form_quantity{
     width: 30px;
+    font-size: 12px;
     margin: 0 0 5px 10px;
 }
 
-.form_button{
-    font-family: 'Pattaya', sans-serif;
+.form_select{
     display: block;
-    margin: 0 auto;
-    color: rgb(57, 174, 157);
+    font-family: 'Cormorant Infant', serif;
+    margin: 3px auto;
+}
+
+.form_name{
+    font-family: 'Cormorant Infant', serif;
+    color: black;
+    text-align: center;
+}
+
+.form_button{
+    font-family: 'Cormorant Infant', serif;
+    display: block;
+    margin: 10px auto;
+    /*color: rgb(57, 174, 157);*/
+    color: black;
     width: 100px;
+    height: 22px;
+    /*border-radius: 8px;*/
 }
