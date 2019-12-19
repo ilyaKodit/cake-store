@@ -1,35 +1,124 @@
 *{
     margin: 0;
     padding: 0;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+/* LAYOUT.HBS */
+/* Header */
+
+.label{
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    font-size: 80px;
 }
 
-h1{
-    font-family: 'Lobster', cursive;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
-
-.product{
-    width: 300px;
-    height: 300px;
-    background-color: grey;
-    border-radius: 8px;
+.header{
+    background-color: rgba(64,224,208,0.8);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
 }
 
 .number{
-    background-color: red;
-    width: 40px;
-    height: 40px;
+    background-color: rgb(57, 174, 157);
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
+    line-height: 25px;
+    color: white;
+    font-size: 14px;
+}
+
+.basket{
+    height: 30px;
+    margin-top: -2px;
 }
 
 .category-btn{
     display: flex;
     justify-content: center;
+}
+
+.user{
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+}
+
+/* Кнопки Header */
+.pie{
+    font-family: 'Pattaya', sans-serif;
+    color: white;
+    margin: 0 20px 10px 0;
+    font-size: 17px;
+}
+
+.cake{
+    font-family: 'Pattaya', sans-serif;
+    color: white;
+    margin: 0 0 10px 20px;
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Main */
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+/* INDEX.HBS */
+
+.product{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(64,224,208,0.4);
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.image_div{
+    width: 90px;
+    margin: 10px auto;
+}
+
+.image_cake{
+    height: 90px;
+
+}
+
+.form_span{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 15px;
+    margin-left: 20px;
+    color: rgb(57, 174, 157);
+}
+
+.form_quantity{
+    width: 30px;
+    margin: 0 0 5px 10px;
+}
+
+.form_button{
+    font-family: 'Pattaya', sans-serif;
+    display: block;
+    margin: 0 auto;
+    color: rgb(57, 174, 157);
+    width: 100px;
 }

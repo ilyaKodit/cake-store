@@ -1,6 +1,36 @@
-<div class="container">
-    <div class="product"></div>
-    <div class="product"></div>
-    <div class="product"></div>
-    <div class="product"></div>
-</div>
+{{#each product}}
+    <div class="product">
+        {{#if this.image}}
+            <div>
+                <img src="{{this.image}}" alt="">
+            </div>
+        {{else}}
+            <div class="image_div">
+                <img src="/image/cake.png" class="image_cake">
+            </div>
+        {{/if}}
+        <form action="/new" method="post">
+            <span class="form_span">Стоимость</span>
+            <span class="form_span">
+                {{#if this.cost}}
+                    {{this.cost}}
+                {{else}}
+                {{/if}}
+            </span>
+            <span class="form_span">Количество</span>
+            <input type="number" name="quantity" class="form_quantity" value="0">
+            <input type="submit" value="В корзину" class="form_button">
+        </form>
+    </div>
+{{/each}}
+
+
+
+
+
+
+
+
+
+
+
