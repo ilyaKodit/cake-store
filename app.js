@@ -5,10 +5,11 @@ const hbs = require('hbs');
 
 const app = express();
 
+const routeRouter = require('./routes/route');
+
+app.use('/', routeRouter);
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(logger('dev'));
-
 app.use(express.json());
 
 // views engine setup
