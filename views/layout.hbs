@@ -10,20 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <script defer src="/js/application.js"></script>
+    <title>Cake-Store</title>
 </head>
 <body>
 <header class="header">
     <p class="label">Cake-Store</p>
     <div class="user">
-        <div class="number">
-            {{#if num}}
-                {{num}}
-                {{else}}
-                0
-            {{/if}}
-        </div>
+        <div class="number">0</div>
         <a href="/buy"><img src="/image/basket.png" alt="" class="basket"></a>
+        <div class="total_cost">0 р.</div>
+        <div class="deleteStorage">Clear</div>
     </div>
     <div class="category-btn">
         <a href="/pie">
