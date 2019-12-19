@@ -23,6 +23,35 @@
     border-bottom-right-radius: 30%;
 }
 
+.total_cost{
+    position: absolute;
+    top: 30px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    width: 60px;
+    background-color: rgb(58, 193, 176);
+    border-radius: 6px;
+}
+
+.deleteStorage{
+    font-family: 'Sacramento', cursive;
+    height: 20px;
+    width: 60px;
+    background-color: rgb(57, 174, 157);
+    border-radius: 6px;
+    position: absolute;
+    top: 53px;
+    color: white;
+    text-align: center;
+}
+.deleteStorage:hover{
+    background-color: rgb(53, 144, 127);
+    transition: 0.3s;
+}
+
 .number{
     background-color: rgb(57, 174, 157);
     width: 25px;
@@ -149,3 +178,14 @@ a{
     height: 22px;
     /*border-radius: 8px;*/
 }
+
+/* BUY.HBS */
+
+.buy_container{
+    background-color: rgba(64,224,208,0.4);
+    border-radius: 8px;
+    margin: 15px;
+    width: 500px;
+    height: 500px;
+}
+

@@ -9,8 +9,8 @@
             <img src="/image/cake.png" class="image_cake">
         </div>
     {{/if}}
-    <form action="/new" method="post" class="form">
-        <p class="form_name">{{this.name}}Название</p>
+    <form action="/new" method="post" class="form" data-nameproduct="{{this.name}}" data-costproduct="{{this.cost}}" data-id="{{this._id}}" data-kind="{{this.kind}}">
+        <p class="form_name">{{this.name}}</p>
         <div>
             <span class="form_span">Стоимость</span>
             <span class="form_span">
@@ -22,38 +22,38 @@
         </div>
         <div>
             <span class="form_span">Количество</span>
-            <input type="number" name="quantity" class="form_quantity" value="0">
+            <input type="number" name="quantity" class="form_quantity" placeholder="0" value="0">
         </div>
         {{#if this.ingridient}}
             <div>
-                <span class="form_span">Дополнительные ингридиенты:</span>
-                <select name="addingridient1" class="form_select">
-                    <option>Доп. ингридиенты</option>
-                    <option value="t1">Клубника</option>
-                    <option value="t2">Малина</option>
-                    <option value="t3">Ананас</option>
-                    <option value="t4">Черника</option>
+                <span class="form_span">Дополнительные ингредиенты:</span>
+                <select name="addingridient1" class="form_select select1">
+                    <option>Доп. ингредиенты</option>
+                    <option value="">Клубника {{this.ingridien}}</option>
+                    <option>Малина</option>
+                    <option>Ананас</option>
+                    <option>Черника</option>
                 </select>
-                <select name="addingridient2" class="form_select">
-                    <option>Доп. ингридиенты</option>
-                    <option value="t1">Клубника</option>
-                    <option value="t2">Малина</option>
-                    <option value="t3">Ананас</option>
-                    <option value="t4">Черника</option>
+                <select name="addingridient2" class="form_select select2">
+                    <option>Доп. ингредиенты</option>
+                    <option>Клубника</option>
+                    <option>Малина</option>
+                    <option>Ананас</option>
+                    <option>Черника</option>
                 </select>
-                <select name="addingridient3" class="form_select">
-                    <option>Доп. ингридиенты</option>
-                    <option value="t1">Клубника</option>
-                    <option value="t2">Малина</option>
-                    <option value="t3">Ананас</option>
-                    <option value="t4">Черника</option>
+                <select name="addingridient3" class="form_select select3">
+                    <option>Доп. ингредиенты</option>
+                    <option>Клубника</option>
+                    <option>Малина</option>
+                    <option>Ананас</option>
+                    <option>Черника</option>
                 </select>
-                <select name="addingridient4" class="form_select">
-                    <option>Доп. ингридиенты</option>
-                    <option value="t1">Клубника</option>
-                    <option value="t2">Малина</option>
-                    <option value="t3">Ананас</option>
-                    <option value="t4">Черника</option>
+                <select name="addingridient4" class="form_select select4">
+                    <option>Доп. ингредиенты</option>
+                    <option>Клубника</option>
+                    <option>Малина</option>
+                    <option>Ананас</option>
+                    <option>Черника</option>
                 </select>
             </div>
         {{/if}}
