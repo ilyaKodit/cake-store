@@ -28,6 +28,7 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
+    "mongoose": "^5.8.1",
     "path": "^0.12.7"
   }
 }
