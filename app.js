@@ -2,7 +2,7 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const hbs = require('hbs');
-
+const port =  process.env.PORT || 3000
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -20,5 +20,5 @@ app.get('/', function(req, res) {
     res.render("index", {new: 555});
 });
 
-app.listen(3000);
+app.listen(port);
 
