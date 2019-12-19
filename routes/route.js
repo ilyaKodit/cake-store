@@ -10,6 +10,11 @@ mongoose.connect('mongodb://localhost/cakestore', {
 
 const router = express.Router();
 
+let newOrder = {
+    num: 0,
+    list: [],
+};
+
 router.get('/', (req, res) => {
     res.redirect('/pie');
 });
@@ -22,6 +27,14 @@ router.get('/pie', async (req, res) => {
 router.get('/cake', async (req, res) => {
     let allCakes = await Cake.find();
     res.render('index', {product: allCakes});
+});
+
+router.post('/new', (req, res) => {
+    res.end();
+});
+
+router.get('/buy', async (req, res) => {
+    res.render('buy');
 });
 
 module.exports = router;

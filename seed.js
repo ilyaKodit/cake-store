@@ -11,31 +11,36 @@ function addNewCake() {
 
     let cake1 = new Cake({
         name: 'Пироженное "Надежда"',
-        cost: 300
+        cost: 300,
+        kind: 'cake',
     });
     cake1.save();
 
     let cake2 = new Cake({
         name: 'Пироженное "Вкусное"',
-        cost: 250
+        cost: 250,
+        kind: 'cake',
     });
     cake2.save();
 
     let cake3 = new Cake({
         name: 'Пироженное "Ваниль"',
-        cost: 450
+        cost: 450,
+        kind: 'cake',
     });
     cake3.save();
 
     let cake4 = new Cake({
         name: 'Пироженное "Трям"',
-        cost: 150
+        cost: 150,
+        kind: 'cake',
     });
     cake4.save();
 
     let cake5 = new Cake({
         name: 'Печенье "Юбилейное"',
-        cost: 50
+        cost: 50,
+        kind: 'cake',
     });
     cake5.save();
 }
@@ -47,6 +52,7 @@ function addNewPie() {
     let pie1 = new Pie({
         name: 'Торт "Наполеон"',
         cost: 700,
+        kind: 'pie',
         ingridient: [
             {
                 name: 'Шоколадная крошка',
@@ -71,6 +77,7 @@ function addNewPie() {
     let pie2 = new Pie({
         name: 'Торт "Мамин"',
         cost: 850,
+        kind: 'pie',
         ingridient: [
             {
                 name: 'Шоколадная крошка',
@@ -95,6 +102,7 @@ function addNewPie() {
     let pie3 = new Pie({
         name: 'Торт "Птичье молоко"',
         cost: 650,
+        kind: 'pie',
         ingridient: [
             {
                 name: 'Шоколадная крошка',
@@ -119,6 +127,7 @@ function addNewPie() {
     let pie4 = new Pie({
         name: 'Торт "Прага"',
         cost: 650,
+        kind: 'pie',
         ingridient: [
             {
                 name: 'Шоколадная крошка',
@@ -143,6 +152,7 @@ function addNewPie() {
     let pie5 = new Pie({
         name: 'Торт "Москва"',
         cost: 700,
+        kind: 'pie',
         ingridient: [
             {
                 name: 'Шоколадная крошка',
@@ -167,6 +177,7 @@ function addNewPie() {
     let pie6 = new Pie({
         name: 'Торт "Шарлотка"',
         cost: 600,
+        kind: 'pie',
         ingridient: [
             {
                 name: 'Шоколадная крошка',
@@ -191,6 +202,7 @@ function addNewPie() {
     let pie7 = new Pie({
         name: 'Торт "Зебра"',
         cost: 900,
+        kind: 'pie',
         ingridient: [
             {
                 name: 'Шоколадная крошка',
@@ -213,4 +225,4 @@ function addNewPie() {
     pie7.save();
 }
 
-addNewPie();
+// addNewPie();

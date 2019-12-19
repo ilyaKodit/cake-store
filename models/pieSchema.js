@@ -6,6 +6,7 @@ const pieSchema = new Schema({
     cost: Number,
     ingridient: Array,
     image: String,
+    kind: String,
 });
 
 module.exports = mongoose.model('pie', pieSchema);
