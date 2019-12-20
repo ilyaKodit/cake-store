@@ -21,7 +21,8 @@ router.get('/', (req, res) => {
 
 router.get('/pie', async (req, res) => {
     let allPies = await Pie.find();
-    res.render('index', {product: allPies});
+    let allIngr = await Pie.find({}, {ingridient: []});
+    res.render('index', {product: allPies, ingridient: allIngr});
 });
 
 router.get('/cake', async (req, res) => {
@@ -34,6 +35,7 @@ router.post('/new', (req, res) => {
 });
 
 router.get('/buy', async (req, res) => {
+    // console.log(req.body);
     res.render('buy');
 });
 

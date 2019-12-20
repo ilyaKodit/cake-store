@@ -1,65 +1,65 @@
-{{#each product}}
-<div class="product">
-    {{#if this.image}}
-        <div class="image-div">
-            <img src="{{this.image}}" alt="">
-        </div>
-    {{else}}
-        <div class="image_div">
-            <img src="/image/cake.png" class="image_cake">
-        </div>
-    {{/if}}
-    <form action="/new" method="post" class="form" data-nameproduct="{{this.name}}" data-costproduct="{{this.cost}}" data-id="{{this._id}}" data-kind="{{this.kind}}">
-        <p class="form_name">{{this.name}}</p>
-        <div>
-            <span class="form_span">Стоимость</span>
-            <span class="form_span">
-                {{#if this.cost}}
-                    {{this.cost}}
-                {{else}}
+<div class="container">
+    {{#each product}}
+        <div class="product">
+            {{#if this.image}}
+                <div class="image-div">
+                    <img src="{{this.image}}" alt="">
+                </div>
+            {{else}}
+                <div class="image_div">
+                    <img src="/image/cake.png" class="image_cake">
+                </div>
+            {{/if}}
+            <form action="/new" method="post" class="form" data-nameproduct="{{this.name}}" data-costproduct="{{this.cost}}" data-id="{{this._id}}" data-kind="{{this.kind}}">
+                <p class="form_name">{{this.name}}</p>
+                <div>
+                    <span class="form_span">Стоимость</span>
+                    <span class="form_span">
+                        {{#if this.cost}}
+                            {{this.cost}}
+                        {{else}}
+                        {{/if}}
+                    </span>
+                </div>
+                <div>
+                    <span class="form_span">Количество</span>
+                    <input type="number" name="quantity" class="form_quantity" placeholder="0" value="0">
+                </div>
+                {{#if this.ingridient}}
+                    <div>
+                        <span class="form_span">Дополнительные ингредиенты:</span>
+                        <select name="addingridient1" class="form_select select1">
+                            <option value="0">Доп. ингредиенты</option>
+                            {{#each ingridient}}
+                                <option value="{{this.price}}" class="ing{{this.id}}">{{this.name}}</option>
+                            {{/each}}
+                        </select>
+                        <select name="addingridient2" class="form_select select2">
+                            <option value="0">Доп. ингредиенты</option>
+                            {{#each ingridient}}
+                                <option value="{{this.price}}" class="ing{{this.id}}">{{this.name}}</option>
+                            {{/each}}
+                        </select>
+                        <select name="addingridient3" class="form_select select3">
+                            <option value="0">Доп. ингредиенты</option>
+                            {{#each ingridient}}
+                                <option value="{{this.price}}" class="ing{{this.id}}">{{this.name}}</option>
+                            {{/each}}
+                        </select>
+                        <select name="addingridient4" class="form_select select4">
+                            <option value="0">Доп. ингредиенты</option>
+                            {{#each ingridient}}
+                                <option value="{{this.price}}" class="ing{{this.id}}">{{this.name}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
                 {{/if}}
-            </span>
-        </div>
-        <div>
-            <span class="form_span">Количество</span>
-            <input type="number" name="quantity" class="form_quantity" placeholder="0" value="0">
-        </div>
-        {{#if this.ingridient}}
-            <div>
-                <span class="form_span">Дополнительные ингредиенты:</span>
-                <select name="addingridient1" class="form_select select1">
-                    <option>Доп. ингредиенты</option>
-                    <option value="">Клубника {{this.ingridien}}</option>
-                    <option>Малина</option>
-                    <option>Ананас</option>
-                    <option>Черника</option>
-                </select>
-                <select name="addingridient2" class="form_select select2">
-                    <option>Доп. ингредиенты</option>
-                    <option>Клубника</option>
-                    <option>Малина</option>
-                    <option>Ананас</option>
-                    <option>Черника</option>
-                </select>
-                <select name="addingridient3" class="form_select select3">
-                    <option>Доп. ингредиенты</option>
-                    <option>Клубника</option>
-                    <option>Малина</option>
-                    <option>Ананас</option>
-                    <option>Черника</option>
-                </select>
-                <select name="addingridient4" class="form_select select4">
-                    <option>Доп. ингредиенты</option>
-                    <option>Клубника</option>
-                    <option>Малина</option>
-                    <option>Ананас</option>
-                    <option>Черника</option>
-                </select>
-            </div>
-        {{/if}}
 
-        <input type="submit" value="В корзину" class="form_button">
-    </form>
+                <input type="submit" value="В корзину" class="form_button">
+            </form>
+        </div>
+    {{/each}}
 </div>
-{{/each}}
+
+
 
