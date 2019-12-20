@@ -2,8 +2,10 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const hbs = require('hbs');
+
 const bodyParser = require('body-parser');
 
+const port =  process.env.PORT || 3000
 
 const app = express();
 
@@ -21,5 +23,6 @@ app.use('/', routeRouter);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.listen(3000);
+app.listen(port);
+
 
