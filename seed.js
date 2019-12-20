@@ -56,19 +56,23 @@ function addNewPie() {
         ingridient: [
             {
                 name: 'Шоколадная крошка',
-                price: 40
+                price: 40,
+                id: 1
             },
             {
                 name: 'Малина',
                 price: 60,
+                id: 2
             },
             {
                 name: 'Клубника',
                 price: 70,
+                id: 3
             },
             {
                 name: 'Ананас',
                 price: 60,
+                id: 4
             },
         ],
     });
@@ -81,19 +85,23 @@ function addNewPie() {
         ingridient: [
             {
                 name: 'Шоколадная крошка',
-                price: 40
+                price: 40,
+                id: 1
             },
             {
                 name: 'Малина',
                 price: 60,
+                id: 2
             },
             {
                 name: 'Клубника',
                 price: 70,
+                id: 3
             },
             {
                 name: 'Ананас',
                 price: 60,
+                id: 4
             },
         ],
     });
@@ -106,19 +114,23 @@ function addNewPie() {
         ingridient: [
             {
                 name: 'Шоколадная крошка',
-                price: 40
+                price: 40,
+                id: 1
             },
             {
                 name: 'Малина',
                 price: 60,
+                id: 2
             },
             {
                 name: 'Клубника',
                 price: 70,
+                id: 3
             },
             {
                 name: 'Ананас',
                 price: 60,
+                id: 4
             },
         ],
     });
@@ -131,19 +143,23 @@ function addNewPie() {
         ingridient: [
             {
                 name: 'Шоколадная крошка',
-                price: 40
+                price: 40,
+                id: 1
             },
             {
                 name: 'Малина',
                 price: 60,
+                id: 2
             },
             {
                 name: 'Клубника',
                 price: 70,
+                id: 3
             },
             {
                 name: 'Ананас',
                 price: 60,
+                id: 4
             },
         ],
     });
@@ -156,19 +172,23 @@ function addNewPie() {
         ingridient: [
             {
                 name: 'Шоколадная крошка',
-                price: 40
+                price: 40,
+                id: 1
             },
             {
                 name: 'Малина',
                 price: 60,
+                id: 2
             },
             {
                 name: 'Клубника',
                 price: 70,
+                id: 3
             },
             {
                 name: 'Ананас',
                 price: 60,
+                id: 4
             },
         ],
     });
@@ -181,19 +201,23 @@ function addNewPie() {
         ingridient: [
             {
                 name: 'Шоколадная крошка',
-                price: 40
+                price: 40,
+                id: 1
             },
             {
                 name: 'Малина',
                 price: 60,
+                id: 2
             },
             {
                 name: 'Клубника',
                 price: 70,
+                id: 3
             },
             {
                 name: 'Ананас',
                 price: 60,
+                id: 4
             },
         ],
     });
@@ -206,23 +230,27 @@ function addNewPie() {
         ingridient: [
             {
                 name: 'Шоколадная крошка',
-                price: 40
+                price: 40,
+                id: 1
             },
             {
                 name: 'Малина',
                 price: 60,
+                id: 2
             },
             {
                 name: 'Клубника',
                 price: 70,
+                id: 3
             },
             {
                 name: 'Ананас',
                 price: 60,
+                id: 4
             },
         ],
     });
     pie7.save();
 }
 
-// addNewPie();
+addNewPie();

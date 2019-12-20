@@ -1,4 +1,4 @@
-document.querySelector('.container').addEventListener('submit', async (event) => {
+document.querySelector('.ivent_cont').addEventListener('submit', async (event) => {
     event.preventDefault();
 
     if (event.target.querySelector('.form_quantity').value !== '0' && Number(event.target.querySelector('.form_quantity').value) > 0){
@@ -18,9 +18,13 @@ document.querySelector('.container').addEventListener('submit', async (event) =>
                 quantity: event.target.querySelector('.form_quantity').value,
                 id: event.target.dataset.id,
                 plus1: event.target.querySelector('.select1').value,
+                ing1:  event.target.querySelector('.ing1').innerText,
                 plus2: event.target.querySelector('.select2').value,
+                ing2: event.target.querySelector('.ing2').innerText,
                 plus3: event.target.querySelector('.select3').value,
+                ing3: event.target.querySelector('.ing3').innerText,
                 plus4: event.target.querySelector('.select4').value,
+                ing4: event.target.querySelector('.ing4').innerText,
             };
 
             sessionStorage.setItem(event.target.dataset.id, JSON.stringify(newProduct));
