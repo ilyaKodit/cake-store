@@ -27,31 +27,45 @@
                 </div>
                 {{#if this.ingridient}}
                     <div>
-                        <span class="form_span">Дополнительные ингредиенты:</span>
-                        <select name="addingridient1" class="form_select select1">
-                            <option value="0">Доп. ингредиенты</option>
-                            {{#each ingridient}}
-                                <option value="{{this.price}}" class="ing{{this.id}}">{{this.name}}</option>
-                            {{/each}}
-                        </select>
-                        <select name="addingridient2" class="form_select select2">
-                            <option value="0">Доп. ингредиенты</option>
-                            {{#each ingridient}}
-                                <option value="{{this.price}}" class="ing{{this.id}}">{{this.name}}</option>
-                            {{/each}}
-                        </select>
-                        <select name="addingridient3" class="form_select select3">
-                            <option value="0">Доп. ингредиенты</option>
-                            {{#each ingridient}}
-                                <option value="{{this.price}}" class="ing{{this.id}}">{{this.name}}</option>
-                            {{/each}}
-                        </select>
-                        <select name="addingridient4" class="form_select select4">
-                            <option value="0">Доп. ингредиенты</option>
-                            {{#each ingridient}}
-                                <option value="{{this.price}}" class="ing{{this.id}}">{{this.name}}</option>
-                            {{/each}}
-                        </select>
+                        <span class="form_span">Дополнительные ингредиенты:</span> </br>
+
+
+                        <input type="checkbox" data-price="40" data-name="Шоколадная крошка" class="check1 check">
+                        <label for="check1">Шоколадная крошка</label></br>
+
+                        <input type="checkbox" data-price="60" data-name="Малина" class="check2 check">
+                        <label for="check2">Малина</label></br>
+
+                        <input type="checkbox" data-price="70" data-name="Клубника" class="check3 check">
+                        <label for="check3">Клубника</label></br>
+
+                        <input type="checkbox" data-price="60" data-name="Ананас" class="check4 check">
+                        <label for="check4">Ананас</label>
+
+                        <!--                        <select name="addingridient1" class="form_select select1">-->
+<!--                            <option value="0">Доп. ингредиенты</option>-->
+<!--                            {{#each ingridient}}-->
+<!--                                <option value="{{this.price}}" class="ing{{this.id}}" data-price="{{ingridient}}">{{this.name}}</option>-->
+<!--                            {{/each}}-->
+<!--                        </select>-->
+<!--                        <select name="addingridient2" class="form_select select2">-->
+<!--                            <option value="0">Доп. ингредиенты</option>-->
+<!--                            {{#each ingridient}}-->
+<!--                                <option value="{{this.price}}" class="ing{{this.id}}" data-price="{{this.price}}">{{this.name}}</option>-->
+<!--                            {{/each}}-->
+<!--                        </select>-->
+<!--                        <select name="addingridient3" class="form_select select3">-->
+<!--                            <option value="0">Доп. ингредиенты</option>-->
+<!--                            {{#each ingridient}}-->
+<!--                                <option value="{{this.price}}" class="ing{{this.id}}" data-price="{{this.price}}">{{this.name}}</option>-->
+<!--                            {{/each}}-->
+<!--                        </select>-->
+<!--                        <select name="addingridient4" class="form_select select4">-->
+<!--                            <option value="0">Доп. ингредиенты</option>-->
+<!--                            {{#each ingridient}}-->
+<!--                                <option value="{{this.price}}" class="ing{{this.id}}" data-price="{{this.price}}">{{this.name}}</option>-->
+<!--                            {{/each}}-->
+<!--                        </select>-->
                     </div>
                 {{/if}}
 
