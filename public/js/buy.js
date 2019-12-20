@@ -6,6 +6,7 @@ for(let key of keys) {
     allObj.push(obj);
 }
 
+
 for (let i = 0; i < allObj.length; i++){
     let newDiv = document.createElement('div');
     newDiv.setAttribute('class', `buy_div div${i}`);
@@ -59,29 +60,11 @@ for (let i = 0; i < allObj.length; i++){
         document.querySelector(`.ingr4${i}`).innerHTML = `${allObj[i].ing1Name4}: ${allObj[i].ing1Price4}`;
     }
 
-
-
-    // for (let j = 0; j < allObj[i].plus.length; j++) {
-    //     console.log(allObj[j].plus);
-    //     for (let k = 0; k < allObj[j].plus.length; k++) {
-    //         // console.log(allObj[j].plus[k]);
-    //         if(allObj[j].plus[k][0] !=="0"){
-    //             console.log(allObj[j].plus[k]);
-    //             document.querySelector(`.ingrid${i}`).innerHTML += " " + allObj[j].plus[k][1] + " - " + allObj[j].plus[k][0];
-    //         }
-    //     }
-
-        // for (let k = 0; k < allObj[i].plus[j].length; k++) {
-        //     if (allObj[i].plus[j][0] !== '0'){
-        //         let newIngr = document.createElement('p');
-        //         newIngr.setAttribute('class', `ingr_name${k}`);
-        //         document.querySelector(`.div${i}`).appendChild(newIngr);
-        //         document.querySelector(`.ingr_name${k}`).innerHTML = `${allObj[i].plus[j][1]} - ${allObj[i].plus[j][0]}`;
-        //         console.log(`${allObj[i].plus[j][k][1]} - ${allObj[i].plus[j][k][0]}`);
-        //         console.log(allObj[i].plus[j][0]);
-        //     }
-        // }
-    // }
 }
 
-console.log(allObj);
+let result = document.createElement('p');
+result.setAttribute('class', `result`);
+document.querySelector(`.total_result`).appendChild(result);
+document.querySelector(`.result`).innerHTML = `Всего на сумму: ${document.querySelector('.total_cost').innerText}`;
+
+

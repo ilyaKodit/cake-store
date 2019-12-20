@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Cake = require('./models/cakeSchema');
 const Pie = require('./models/pieSchema');
 
-mongoose.connect('mongodb://localhost/cakestore', {
+mongoose.connect('mongodb+srv://ilya:ilya-gluk@cake-store-yo7tf.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
@@ -45,7 +45,7 @@ function addNewCake() {
     cake5.save();
 }
 
-// addNewCake();
+addNewCake();
 
 function addNewPie() {
 
@@ -253,4 +253,4 @@ function addNewPie() {
     pie7.save();
 }
 
-// addNewPie();
+addNewPie();

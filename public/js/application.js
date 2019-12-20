@@ -45,6 +45,7 @@ document.querySelector('.ivent_cont').addEventListener('submit', async (event) =
             }
 
             let newProduct = {
+
                 name: event.target.dataset.nameproduct,
                 cost: event.target.dataset.costproduct,
                 quantity: event.target.querySelector('.form_quantity').value,
@@ -59,25 +60,6 @@ document.querySelector('.ivent_cont').addEventListener('submit', async (event) =
                 ing1Name4: checkBoxName4,
                 ing1Price4: checkBoxPrice4,
 
-
-                // plus1: event.target.querySelector('.ing1').dataset.price,
-                // plus1: event.target.querySelector('.select1').value,
-                // ing1: event.target.querySelector('.ing1').innerText,
-                // plus2: event.target.querySelector('.select2').value,
-                // ing2: event.target.querySelector('.ing2').innerText,
-                // plus3: event.target.querySelector('.select3').value,
-                // ing3: event.target.querySelector('.ing3').innerText,
-                // plus4: event.target.querySelector('.select4').value,
-                // ing4: event.target.querySelector('.ing4').innerText,
-
-
-
-                // plus: [
-                //     [event.target.querySelector('.select1').value, event.target.querySelector('.ing1').innerText],
-                //     [event.target.querySelector('.select2').value, event.target.querySelector('.ing2').innerText],
-                //     [event.target.querySelector('.select3').value, event.target.querySelector('.ing3').innerText],
-                //     [event.target.querySelector('.select4').value, event.target.querySelector('.ing4').innerText],
-                // ],
             };
 
             sessionStorage.setItem(event.target.dataset.id, JSON.stringify(newProduct));
@@ -108,8 +90,9 @@ function totalSum() {
     for(let key of keys) {
         let temp = sessionStorage.getItem(key);
         let q = JSON.parse(temp);
-        count += (Number(q.cost) + Number(q.ing1Price1) + Number(q.ing1Price2) + Number(q.ing1Price3) + Number(q.ing1Price4)) * Number(q.quantity);
+        count += (Number(q.cost) + (Number(q.ing1Price1) || 0) + (Number(q.ing1Price2) || 0) + (Number(q.ing1Price3) || 0) + (Number(q.ing1Price4) || 0)) * Number(q.quantity);
     }
 
     document.querySelector('.total_cost').innerHTML = `${count}  р.`;
 }
+

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" data-kind="{{kind}}">
     {{#each product}}
         <div class="product">
             {{#if this.image}}
@@ -31,16 +31,16 @@
 
 
                         <input type="checkbox" data-price="40" data-name="Шоколадная крошка" class="check1 check">
-                        <label for="check1">Шоколадная крошка</label></br>
+                        <label for="check1" class="check_label">Шоколадная крошка</label></br>
 
                         <input type="checkbox" data-price="60" data-name="Малина" class="check2 check">
-                        <label for="check2">Малина</label></br>
+                        <label for="check2" class="check_label">Малина</label></br>
 
                         <input type="checkbox" data-price="70" data-name="Клубника" class="check3 check">
-                        <label for="check3">Клубника</label></br>
+                        <label for="check3" class="check_label">Клубника</label></br>
 
                         <input type="checkbox" data-price="60" data-name="Ананас" class="check4 check">
-                        <label for="check4">Ананас</label>
+                        <label for="check4" class="check_label">Ананас</label>
 
                         <!--                        <select name="addingridient1" class="form_select select1">-->
 <!--                            <option value="0">Доп. ингредиенты</option>-->

@@ -185,7 +185,6 @@ a{
     background-color: rgba(64,224,208,0.4);
     border-radius: 8px;
     width: 500px;
-    height: 500px;
     margin: 15px auto;
 }
 
@@ -203,6 +202,7 @@ a{
 }
 
 .buy_button{
+    margin: 15px auto;
     width: 80px;
     height: 22px;
 }
@@ -213,4 +213,32 @@ a{
 
 .buy_div{
     margin: 10px;
+}
+
+.buy_div > p{
+    font-family: 'Cormorant Infant', serif;
+    color: rgb(37, 94, 79);
+    margin-left: 20px;
+}
+
+.result{
+    font-family: 'Cormorant Infant', serif;
+    color: rgb(37, 94, 79);
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+.kastil{
+    height: 10px;
+}
+
+.check_label{
+    font-family: 'Cormorant Infant', serif;
+    font-size: 13px;
+    margin-left: 5px;
+    color: rgb(41, 118, 103);
+}
+
+.check{
+    margin-left: 20px;
 }
