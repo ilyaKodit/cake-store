@@ -8,6 +8,7 @@ document.querySelector('.ivent_cont').addEventListener('submit', async (event) =
                 cost: event.target.dataset.costproduct,
                 quantity: event.target.querySelector('.form_quantity').value,
                 id: event.target.dataset.id,
+                kind: document.querySelector('.container').dataset.kind,
             };
 
             sessionStorage.setItem(event.target.dataset.id, JSON.stringify(newProduct));
@@ -44,13 +45,14 @@ document.querySelector('.ivent_cont').addEventListener('submit', async (event) =
                 checkBoxName4 = event.target.querySelector('.check4').dataset.name;
             }
 
+
             let newProduct = {
 
                 name: event.target.dataset.nameproduct,
                 cost: event.target.dataset.costproduct,
                 quantity: event.target.querySelector('.form_quantity').value,
                 id: event.target.dataset.id,
-
+                kind: document.querySelector('.container').dataset.kind,
                 ing1Name1: checkBoxName1,
                 ing1Price1: checkBoxPrice1,
                 ing1Name2: checkBoxName2,
@@ -96,3 +98,4 @@ function totalSum() {
     document.querySelector('.total_cost').innerHTML = `${count}  р.`;
 }
 
+console.log(document.querySelector('.container').dataset.kind);

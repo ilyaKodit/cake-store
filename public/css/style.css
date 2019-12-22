@@ -175,8 +175,25 @@ a{
     /*color: rgb(57, 174, 157);*/
     color: black;
     width: 100px;
-    height: 22px;
-    /*border-radius: 8px;*/
+    height: 25px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background: rgba(64,224,208,0.8);
+}
+.form_button:hover{
+    background: rgba(56, 181, 165, 0.8);
+}
+
+.check{
+    margin-left: 20px;
+}
+
+.check_label{
+    font-family: 'Cormorant Infant', serif;
+    font-size: 13px;
+    margin-left: 5px;
+    color: rgb(41, 118, 103);
 }
 
 /* BUY.HBS */
@@ -202,13 +219,20 @@ a{
 }
 
 .buy_button{
+    font-family: 'Cormorant Infant', serif;
+    display: block;
     margin: 15px auto;
-    width: 80px;
-    height: 22px;
+    /*color: rgb(57, 174, 157);*/
+    color: black;
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background: rgba(64,224,208,0.8);
 }
-
-.check{
-    /*display: block;*/
+.buy_button:hover{
+    background: rgba(56, 181, 165, 0.8);
 }
 
 .buy_div{
@@ -232,13 +256,6 @@ a{
     height: 10px;
 }
 
-.check_label{
-    font-family: 'Cormorant Infant', serif;
-    font-size: 13px;
-    margin-left: 5px;
-    color: rgb(41, 118, 103);
-}
-
-.check{
-    margin-left: 20px;
+.fat{
+    font-weight: 600;
 }
